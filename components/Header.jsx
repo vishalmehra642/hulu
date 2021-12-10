@@ -8,19 +8,20 @@ import {
   LightningBoltIcon,
   SearchIcon,
   UserIcon,
+  ThumbUpIcon
 } from "@heroicons/react/outline";
 import Navbar from "./Navbar";
 
 const Header = () => {
   return (
     <div className=" sm:px-6 px-1">
-      <div className="flex items-center justify-between md:flex-row flex-col">
-        <div className="flex flex-grow justify-evenly max-w-3xl mt-5">
+      <div className="flex items-center justify-between lg:flex-row flex-col">
+        <div className="flex flex-grow justify-evenly max-w-4xl mt-5">
           <NavIcon text="home" Icon={HomeIcon} />
           <NavIcon text="trending" Icon={LightningBoltIcon} />
           <NavIcon text="verified" Icon={BadgeCheckIcon} />
           <NavIcon text="collections" Icon={CollectionIcon} />
-          <NavIcon text="search" Icon={SearchIcon} />
+          <NavIcon text="search" Icon={SearchIcon} search/>
           <NavIcon text="account" Icon={UserIcon} />
         </div>
         <Image
